@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   branch: main
 locale: fr
+media_folder: 'assets/uploads'
+media_library:
+   name: uploads
 slug:
   encoding: ascii
   clean_accents: true

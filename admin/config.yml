@@ -25,3 +25,13 @@ collections:
         buttons: [bold, link, bulleted-list]
         editor_components: []
         modes: [rich_text]
+  - name: themes
+    label: Thèmes
+    folder: _themes
+    extension: html
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: Titre
+        name: title

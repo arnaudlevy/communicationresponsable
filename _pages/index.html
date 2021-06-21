@@ -3,8 +3,16 @@ title: Recommandations pour une communication plus responsable
 permalink: /
 ---
 
+<h2>Recommandations</h2>
 <ul>
 {% for guideline in site.guidelines %}
   <li><a href="{{ guideline.url }}">{{ guideline.title }}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Thèmes</h2>
+<ul>
+{% for theme in site.themes %}
+  <li><a href="{{ theme.url }}">{{ theme.title }}</a></li>
 {% endfor %}
 </ul>

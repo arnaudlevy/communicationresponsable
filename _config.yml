@@ -19,3 +19,6 @@ collections:
   guidelines:
     output: true
     permalink: /recommandations/:name
+  themes:
+    output: true
+    permalink: /themes/:name

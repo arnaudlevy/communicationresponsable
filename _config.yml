@@ -13,6 +13,13 @@ defaults:
     values:
       layout: "guideline"
 
+  -
+    scope:
+      path: ""
+      type: "themes"
+    values:
+      layout: "theme"
+
 collections:
   pages:
     output: true

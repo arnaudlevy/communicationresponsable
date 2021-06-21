@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h2>Recommandations</h2>
+<ul>
+{% for guideline in site.guidelines %}
+  {% if guideline.themes contains page.slug %}
+    <li><a href="{{ guideline.url }}">{{ guideline.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

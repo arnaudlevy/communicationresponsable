@@ -3,3 +3,12 @@ layout: default
 ---
 
 {{ page.text | markdownify }}
+
+<h2>Thèmes</h2>
+<ul>
+{% for theme in site.themes %}
+  {% if page.themes contains theme.slug %}
+    <li><a href="{{ theme.url }}">{{ theme.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

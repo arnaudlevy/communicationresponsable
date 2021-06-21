@@ -15,6 +15,8 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Numéro
+        name: number
       - label: Titre
         name: title
       - label: Texte

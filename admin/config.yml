@@ -10,13 +10,16 @@ collections:
   - name: guidelines
     label: Recommandations
     folder: _guidelines
+    identifier_field: number
     extension: html
     create: true
     editor:
       preview: false
     fields:
-      - label: Numéro
+      - label: Numéro (attention, les numéros doivent être uniques)
         name: number
+        widget: number
+        value_type: int
       - label: Titre
         name: title
       - label: Texte
@@ -27,10 +30,20 @@ collections:
         buttons: [bold, link, bulleted-list]
         editor_components: []
         modes: [rich_text]
-      - label: "Thèmes"
-        name: "themes"
-        widget: "relation"
-        collection: "themes"
+      - label: Thèmes
+        name: themes
+        widget: relation
+        collection: themes
+        required: false
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        multiple: true
+      - label: Canaux
+        name: channels
+        widget: relation
+        collection: channels
+        required: false
         search_fields: ["title"]
         value_field: "{{slug}}"
         display_fields: ["title"]

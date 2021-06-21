@@ -12,13 +12,18 @@ defaults:
       type: "guidelines"
     values:
       layout: "guideline"
-
   -
     scope:
       path: ""
       type: "themes"
     values:
       layout: "theme"
+  -
+    scope:
+      path: ""
+      type: "channels"
+    values:
+      layout: "channel"
 
 collections:
   pages:
@@ -29,3 +34,6 @@ collections:
   themes:
     output: true
     permalink: /themes/:name
+  channels:
+    output: true
+    permalink: /canaux/:name

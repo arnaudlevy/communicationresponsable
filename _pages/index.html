@@ -16,3 +16,10 @@ permalink: /
   <li><a href="{{ theme.url }}">{{ theme.title }}</a></li>
 {% endfor %}
 </ul>
+
+<h2>Canaux</h2>
+<ul>
+{% for channel in site.channels %}
+  <li><a href="{{ channel.url }}">{{ channel.title }}</a></li>
+{% endfor %}
+</ul>

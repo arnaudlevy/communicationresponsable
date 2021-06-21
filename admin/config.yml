@@ -78,11 +78,15 @@ collections:
     fields:
       - label: Titre
         name: title
-  # - name: goals
-  #   label: ODD
-  #   folder: _goals
-  #   extension: html
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - label
+  - name: goals
+    label: ODD
+    folder: _goals
+    extension: html
+    editor:
+      preview: false
+    fields:
+      - label: Titre
+        name: title
+      - label: Texte
+        name: description
+        widget: text

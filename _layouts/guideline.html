@@ -25,3 +25,12 @@ layout: default
   {% endif %}
 {% endfor %}
 </ul>
+
+<h2>Objectifs de Développement Durable</h2>
+<ul class="goals">
+{% for goal in site.goals %}
+  {% if page.goals contains goal.slug %}
+    <li>{% include goal.html goal=goal %}</li>
+  {% endif %}
+{% endfor %}
+</ul>

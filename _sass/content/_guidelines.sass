@@ -1,0 +1,32 @@
+.guidelines
+  display: grid
+  grid-gap: $margin
+  grid-template-columns: repeat(1, minmax(0, 1fr))
+  @include desktop
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+  &__guideline
+    position: relative
+    border: black 1px solid
+    padding: $margin
+    min-height: 80px
+    overflow: hidden
+    &__title
+      font-size: 1.1rem
+    &__number
+      background: black
+      position: absolute
+      right: 0
+      bottom: 0
+      color: white
+      font-size: 0.8rem
+      line-height: 0.8rem
+      padding: 5px
+    a::after
+      content: ""
+      display: block
+      clear: both
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0

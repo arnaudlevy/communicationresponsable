@@ -3,10 +3,10 @@ layout: default
 ---
 
 <h2>Recommandations</h2>
-<ul>
+<ul class="guidelines">
 {% for guideline in site.guidelines %}
-  {% if guideline.themes contains page.slug %}
-    <li><a href="{{ guideline.url }}">{{ guideline.title }}</a></li>
+  {% if guideline.channels contains page.slug %}
+    <li>{% include guideline.html guideline=guideline %}</li>
   {% endif %}
 {% endfor %}
 </ul>

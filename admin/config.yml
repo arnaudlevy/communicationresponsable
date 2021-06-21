@@ -13,6 +13,7 @@ collections:
     identifier_field: number
     extension: html
     create: true
+    summary: "{{number}} - {{title}}"
     editor:
       preview: false
     fields:
@@ -51,6 +52,16 @@ collections:
   - name: themes
     label: Thèmes
     folder: _themes
+    extension: html
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: Titre
+        name: title
+  - name: channels
+    label: Canaux
+    folder: _channels
     extension: html
     create: true
     editor:

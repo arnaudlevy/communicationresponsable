@@ -6,6 +6,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "guidelines"
+    values:
+      layout: "guideline"
 
 collections:
   pages:

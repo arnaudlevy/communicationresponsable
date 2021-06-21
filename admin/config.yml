@@ -3,6 +3,7 @@ backend:
   branch: main
 locale: fr
 media_folder: 'assets/uploads'
+local_backend: true
 slug:
   encoding: ascii
   clean_accents: true
@@ -25,6 +26,13 @@ collections:
         buttons: [bold, link, bulleted-list]
         editor_components: []
         modes: [rich_text]
+      - label: "Thèmes"
+        name: "themes"
+        widget: "relation"
+        collection: "themes"
+        search_fields: ['title']
+        value_field: "{{slug}}"
+        multiple: true
   - name: themes
     label: Thèmes
     folder: _themes

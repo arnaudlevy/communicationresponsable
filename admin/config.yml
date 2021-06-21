@@ -49,6 +49,15 @@ collections:
         value_field: "{{slug}}"
         display_fields: ["title"]
         multiple: true
+      - label: ODD
+        name: goals
+        widget: relation
+        collection: goals
+        required: false
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        multiple: true
   - name: themes
     label: Thèmes
     folder: _themes
@@ -69,3 +78,11 @@ collections:
     fields:
       - label: Titre
         name: title
+  # - name: goals
+  #   label: ODD
+  #   folder: _goals
+  #   extension: html
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - label

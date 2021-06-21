@@ -22,3 +22,11 @@ permalink: /
   <li><a href="{{ channel.url }}" class="channels__channel">{{ channel.title }}</a></li>
 {% endfor %}
 </ul>
+
+<h2>Objectifs de Développement Durable</h2>
+
+<ul class="goals">
+{% for goal in site.goals %}
+  <li>{% include goal.html goal=goal %}</li>
+{% endfor %}
+</ul>

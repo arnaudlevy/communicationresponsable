@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<p>{{ page.description | markdownify }}</p>
+
+<h2>Recommandations</h2>
+<ul class="guidelines">
+{% for guideline in site.guidelines %}
+  {% if guideline.goals contains page.slug %}
+    <li>{% include guideline.html guideline=guideline %}</li>
+  {% endif %}
+{% endfor %}
+</ul>

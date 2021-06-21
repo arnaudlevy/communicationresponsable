@@ -1,0 +1,17 @@
+.goals
+  display: grid
+  grid-gap: $margin
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  @include desktop
+    grid-template-columns: repeat(6, minmax(0, 1fr))
+  &__goal
+    position: relative
+    border: white 1px solid
+    padding: $margin
+    min-height: 80px
+    overflow: hidden
+    @include stretched-link
+    &__number
+      font-size: 2rem
+      display: block
+      line-height: 2rem

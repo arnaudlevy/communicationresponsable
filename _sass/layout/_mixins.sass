@@ -7,3 +7,14 @@
   text-decoration: none
   text-transform: uppercase
   font-size: 0.8rem
+
+@mixin stretched-link
+  a::after
+    content: ""
+    display: block
+    clear: both
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0

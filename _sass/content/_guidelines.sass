@@ -10,6 +10,7 @@
     padding: $margin
     min-height: 80px
     overflow: hidden
+    @include stretched-link
     &__title
       font-size: 1.1rem
     &__number
@@ -21,15 +22,6 @@
       font-size: 0.8rem
       line-height: 0.8rem
       padding: 5px
-    a::after
-      content: ""
-      display: block
-      clear: both
-      position: absolute
-      left: 0
-      right: 0
-      top: 0
-      bottom: 0
 
 .guideline__number
   background: $color

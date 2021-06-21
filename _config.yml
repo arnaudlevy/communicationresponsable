@@ -24,6 +24,12 @@ defaults:
       type: "channels"
     values:
       layout: "channel"
+  -
+    scope:
+      path: ""
+      type: "goals"
+    values:
+      layout: "goal"
 
 collections:
   pages:
@@ -37,3 +43,6 @@ collections:
   channels:
     output: true
     permalink: /canaux/:name
+  goals:
+    output: true
+    permalink: /objectifs/:name

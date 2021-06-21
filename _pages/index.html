@@ -1,0 +1,10 @@
+---
+title: Recommandations pour une communication plus responsable
+permalink: /
+---
+
+<ul>
+{% for guideline in site.guidelines %}
+  <li><a href="{{ guideline.url }}">{{ guideline.title }}</a></li>
+{% endfor %}
+</ul>

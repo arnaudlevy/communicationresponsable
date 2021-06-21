@@ -1,0 +1,15 @@
+title: Communication responsable
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  pages:
+    output: true
+  guidelines:
+    output: true
+    permalink: /recommandations/:name

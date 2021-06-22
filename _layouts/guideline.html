@@ -47,3 +47,12 @@ layout: default
   {% endif %}
 {% endfor %}
 </ul>
+
+<h2>Contributrices & contributeurs</h2>
+<ul class="contributors">
+{% for contributor in site.contributors %}
+  {% if page.contributors contains contributor.slug %}
+    <li><a href="{{ contributor.url }}" class="contributors__ccontributor">{{ contributor.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

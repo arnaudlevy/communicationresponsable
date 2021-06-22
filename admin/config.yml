@@ -85,6 +85,15 @@ collections:
         value_field: "{{slug}}"
         display_fields: ["title"]
         multiple: true
+      - label: Contribs
+        name: contributors
+        widget: relation
+        collection: contributors
+        required: false
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        multiple: true
   - name: themes
     label: Thèmes
     folder: _themes

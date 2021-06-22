@@ -19,12 +19,38 @@ collections:
     fields:
       - label: Numéro (attention, les numéros doivent être uniques)
         name: number
-        widget: number
-        value_type: int
+        widget: string
       - label: Titre
         name: title
       - label: Texte
         name: text
+        widget: markdown
+        minimal: true
+        required: false
+        buttons: [bold, link, bulleted-list]
+        editor_components: []
+        modes: [rich_text]
+      - label: Sources
+        name: sources
+        widget: markdown
+        minimal: true
+        required: false
+        buttons: [bold, link, bulleted-list]
+        editor_components: []
+        modes: [rich_text]
+      - label: Consensuel / dissensuel
+        name: consensus
+        widget: boolean
+      - label: Arguments pour
+        name: pro
+        widget: markdown
+        minimal: true
+        required: false
+        buttons: [bold, link, bulleted-list]
+        editor_components: []
+        modes: [rich_text]
+      - label: Arguents contre
+        name: con
         widget: markdown
         minimal: true
         required: false

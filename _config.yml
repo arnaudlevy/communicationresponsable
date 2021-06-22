@@ -51,7 +51,7 @@ collections:
     permalink: /canaux/:name
   goals:
     output: true
-    permalink: /objectifs/:name
+    permalink: /odd/:name
   contributors:
     output: true
     permalink: /contribs/:name

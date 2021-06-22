@@ -8,6 +8,19 @@ layout: default
 
 {{ page.text | markdownify }}
 
+<h2>Sources</h2>
+
+{{ page.sources | markdownify }}
+
+{% unless page.consensus %}
+  <h2>Dissensus</h2>
+  <p>Cette recommandation fait l'objet d'un débat.</p>
+  <h3>Arguments pour</h3>
+  {{ page.pro | markdownify }}
+  <h3>Arguments contre</h3>
+  {{ page.con | markdownify }}
+{% endunless %}
+
 <h2>Thèmes</h2>
 <ul class="themes">
 {% for theme in site.themes %}

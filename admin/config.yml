@@ -38,7 +38,7 @@ collections:
         buttons: [bold, link, bulleted-list]
         editor_components: []
         modes: [rich_text]
-      - label: Consensuel / dissensuel
+      - label: Consensuel
         name: consensus
         widget: boolean
         required: false
@@ -50,7 +50,7 @@ collections:
         buttons: [bold, link, bulleted-list]
         editor_components: []
         modes: [rich_text]
-      - label: Arguents contre
+      - label: Arguments contre
         name: con
         widget: markdown
         minimal: true

@@ -7,27 +7,35 @@ main
   position: relative
 
 h1, h2, h3, p, li, nav, a
-  font-family: 'Abel', sans-serif
+  font-family: 'Poppins', sans-serif
+  font-weight: 300
 
 h1
-  font-size: 2rem
-  margin-bottom: $margin
+  font-size: 1.6rem
+  margin-bottom: 2*$margin
+  @include desktop
+    font-size: 2rem
 
 h2
-  font-size: 1.5rem
-  margin-top: 2*$margin
-  margin-bottom: $margin
+  font-size: 1rem
+  text-transform: uppercase
+  letter-spacing: 2px
+  margin-top: 4*$margin
+  margin-bottom: 2*$margin
 
 h3
-  font-size: 1.3rem
-  line-height: 130%
+  font-size: 1rem
+  line-height: 160%
+  font-weight: bold
+  margin-top: $margin
 
 p
-  line-height: 150%
+  line-height: 160%
+  max-width: 1024px
 
 ul
   li
-    line-height: 130%
+    line-height: 160%
 
 a
   transition: text-decoration 0.5s

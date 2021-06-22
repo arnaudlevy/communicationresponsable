@@ -30,6 +30,12 @@ defaults:
       type: "goals"
     values:
       layout: "goal"
+  -
+    scope:
+      path: ""
+      type: "contributors"
+    values:
+      layout: "contributor"
 
 collections:
   pages:
@@ -46,3 +52,6 @@ collections:
   goals:
     output: true
     permalink: /objectifs/:name
+  contributors:
+    output: true
+    permalink: /contribs/:name

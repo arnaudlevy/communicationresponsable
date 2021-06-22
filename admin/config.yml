@@ -41,6 +41,7 @@ collections:
       - label: Consensuel / dissensuel
         name: consensus
         widget: boolean
+        required: false
       - label: Arguments pour
         name: pro
         widget: markdown
@@ -116,3 +117,23 @@ collections:
       - label: Texte
         name: description
         widget: text
+  - name: contributors
+    label: Contribs
+    folder: _contributors
+    extension: html
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: Nom
+        name: title
+      - label: Description
+        name: description
+        widget: markdown
+        minimal: true
+        required: false
+        buttons: [bold, link, bulleted-list]
+        editor_components: []
+        modes: [rich_text]
+      - label: URL
+        name: url

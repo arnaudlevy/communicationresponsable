@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<p>{{ page.description | markdownify }}</p>
+
+{% if page.url %}
+  <p><a href="{{ page.url }}" target="_blank" rel="noreferrer">Site</a></p>
+{% endif %}
+
+<h2>Recommandations</h2>
+<ul class="guidelines">
+{% for guideline in site.guidelines %}
+  {% if guideline.contributors contains page.slug %}
+    <li>{% include guideline.html guideline=guideline %}</li>
+  {% endif %}
+{% endfor %}
+</ul>

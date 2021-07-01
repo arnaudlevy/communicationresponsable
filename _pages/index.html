@@ -3,12 +3,6 @@ title: Recommandations pour une communication plus responsable
 permalink: /
 ---
 
-<ul class="guidelines">
-{% for guideline in site.guidelines %}
-  <li>{% include guideline.html guideline=guideline %}</li>
-{% endfor %}
-</ul>
-
 <h2>Thèmes</h2>
 <ul class="themes">
 {% for theme in site.themes %}
@@ -16,10 +10,23 @@ permalink: /
 {% endfor %}
 </ul>
 
+<h2>Supports</h2>
+<ul class="supports">
+{% for support in site.supports %}
+  <li><a href="{{ support.url }}" class="supports__support">{{ support.title }}</a></li>
+{% endfor %}
+</ul>
+
 <h2>Canaux</h2>
 <ul class="channels">
 {% for channel in site.channels %}
   <li><a href="{{ channel.url }}" class="channels__channel">{{ channel.title }}</a></li>
+{% endfor %}
+</ul>
+
+<ul class="guidelines">
+{% for guideline in site.guidelines %}
+  <li>{% include guideline.html guideline=guideline %}</li>
 {% endfor %}
 </ul>
 

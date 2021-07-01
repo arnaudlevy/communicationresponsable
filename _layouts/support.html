@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h2>Recommandations</h2>
+<ul class="guidelines">
+{% for guideline in site.guidelines %}
+  {% if guideline.supports contains page.slug %}
+    <li>{% include guideline.html guideline=guideline %}</li>
+  {% endif %}
+{% endfor %}
+</ul>

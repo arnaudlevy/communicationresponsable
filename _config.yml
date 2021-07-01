@@ -21,6 +21,12 @@ defaults:
   -
     scope:
       path: ""
+      type: "supports"
+    values:
+      layout: "support"
+  -
+    scope:
+      path: ""
       type: "channels"
     values:
       layout: "channel"
@@ -46,6 +52,9 @@ collections:
   themes:
     output: true
     permalink: /themes/:name
+  supports:
+    output: true
+    permalink: /supports/:name
   channels:
     output: true
     permalink: /canaux/:name

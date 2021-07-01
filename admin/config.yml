@@ -67,6 +67,15 @@ collections:
         value_field: "{{slug}}"
         display_fields: ["title"]
         multiple: true
+      - label: Supports
+        name: supports
+        widget: relation
+        collection: supports
+        required: false
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        multiple: true
       - label: Canaux
         name: channels
         widget: relation
@@ -104,6 +113,19 @@ collections:
     fields:
       - label: Titre
         name: title
+  - name: supports
+    label: Supports
+    folder: _supports
+    extension: html
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: Titre
+        name: title
+      - label: Texte
+        name: description
+        widget: text
   - name: channels
     label: Canaux
     folder: _channels

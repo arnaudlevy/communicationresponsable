@@ -3,4 +3,11 @@
   <h3 class="guidelines__guideline__title">
     <a href="{{ guideline.url }}">{{ guideline.title }}</a>
   </h3>
+  <ul class="guidelines__guideline__themes">
+    {% for theme in site.themes %}
+      {% if guideline.themes contains theme.slug %}
+        <li><span class="themes__theme">{{ theme.title }}</span></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </article>

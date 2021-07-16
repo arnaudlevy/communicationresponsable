@@ -8,11 +8,12 @@
     position: relative
     background: $color
     padding: $margin
-    min-height: 120px
+    min-height: 150px
     overflow: hidden
     @include stretched-link
     &__title
       margin-top: 0
+      margin-bottom: 5px
       font-size: 1.1rem
       a
         color: black
@@ -25,6 +26,8 @@
       font-size: 0.8rem
       line-height: 0.8rem
       padding: 5px
+    &__themes li
+      display: inline-block
 
 .guideline__number
   background: $color
